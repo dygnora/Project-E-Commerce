@@ -1,0 +1,52 @@
+@import url('erode.css');
+
+
+:root {
+    --c-dark : #1A1A1A;
+    --c-light : #EEEEEE;
+    --c-primary : #020202;
+    --c-primary-hover : #ffc800;
+    --font-base : 'Erode', sans-serif;
+    --box-shadow : 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition : all 0,5s ease;
+}
+
+body {
+    font-family: var(--font-base);
+    line-height: 1.5;
+    color: var(--c-primary);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-primary-hover);
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.hero-image {
+  object-fit: cover; /* Membuat gambar menutupi area dengan proporsi yang benar */
+  height: 70vh; /* Mengatur tinggi gambar menjadi 70% dari tinggi viewport */
+  width: 100%; /* Gambar memenuhi lebar elemen */
+}
+
+.kategori {
+    transition: transform 0.3s ease;
+  }
+
+  .kategori:hover {
+    transform: scale(1.2);
+  }
